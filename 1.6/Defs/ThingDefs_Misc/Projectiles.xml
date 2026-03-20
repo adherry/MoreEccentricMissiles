@@ -1,0 +1,48 @@
+<Defs>
+    <!-- M71 PGM (Smoke) -->
+    <ThingDef ParentName="EccentricDefenseGrid_BaseArtilleryProjectile">
+        <defName>ETDG_Custom_Projectile_M71PGM</defName>
+        <label>M71 precision guided missile</label>
+        <graphicData>
+            <texPath>Eccentric/Things/Projectiles/Projectile_M71_Smoke</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Smoke</damageDef>
+            <speed>40</speed>
+            <explosionRadius>10</explosionRadius>
+            <flyOverhead>true</flyOverhead>
+            <!-- <soundExplode>Explosion_EMP</soundExplode> -->
+            <postExplosionGasType>BlindSmoke</postExplosionGasType>
+        </projectile>
+        <modExtensions>
+            <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+                <effects>
+                    <li>Eccentric_ArtilleryMissileTrail</li>
+                    <li>Eccentric_ArtilleryMissileSmoke</li>
+                    <li>Eccentric_ArtilleryMissileExhaust</li>
+                </effects>
+                <stages>
+                    <li>
+                        <label>ejected</label>
+                        <type>Launch</type>
+                        <duration>24</duration>
+                        <overrideInitialAngle>true</overrideInitialAngle>
+                        <angle>-90</angle>
+                        <initialHeight>0.1</initialHeight>
+                        <heightOffset>2</heightOffset>
+                        <heightFunction>EaseOutQuad</heightFunction>
+                        <startSound>Eccentric_ArtilleryMissileEject</startSound>
+                    </li>
+                    <li>
+                        <label>tracking</label>
+                        <type>Terminal</type>
+                        <speed>40</speed>
+                        <positionFunction>EaseInCubic</positionFunction>
+                        <arcFactor>12</arcFactor>
+                        <startSound>Eccentric_ArtilleryMissileIgnite</startSound>
+                    </li>
+                </stages>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>

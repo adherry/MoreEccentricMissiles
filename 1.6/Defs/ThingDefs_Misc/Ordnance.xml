@@ -1,0 +1,39 @@
+<Defs>
+    <!-- M71 PGM (Smoke) -->
+    <ThingDef ParentName="EccentricDefenseGrid_BaseMakeableOrdnance"
+        Class="EccentricDefenseGrid.OrdnanceDef">
+        <defName>ETDG_Custom_Ordnance_M71PGM</defName>
+        <label>M71 PGM (smoke)</label>
+        <labelShort>M71 Smoke</labelShort>
+        <description>A precision-guided short-range missile packed with a smoke generating compound that is already ignited at launch for maximum smoke coverage.\n\nIt is designed to be loaded into vertical missile launchers on military-grade starships and requires a guidance lock to fire.</description>
+        <uiOrder>110</uiOrder>
+        <graphicData>
+            <texPath>Eccentric/Things/Items/Ordnance_M71_Smoke</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>330</MarketValue>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+            <Chemfuel>35</Chemfuel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <ordnance>
+            <projectile>ETDG_Custom_Projectile_M71PGM</projectile>
+            <effectRadius>9.9</effectRadius>
+            <uiColor>(51,51,51)</uiColor>
+        </ordnance>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>9.9</explosiveRadius>
+                <explosiveDamageType>Smoke</explosiveDamageType>
+                <postExplosionGasType>BlindSmoke</postExplosionGasType>
+            </li>
+        </comps>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>SmokepopBelt</li>
+            </researchPrerequisites>
+        </recipeMaker>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<packageId>adherry.very.eccentric.missiles</packageId>
+	<name>More Eccentric Missiles</name>
+	<author>adherry</author>
+	<!-- <modIconPath>path/to/icon</modIconPath> -->
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<downloadUrl>
+				https://github.com/pardeike/HarmonyRimWorld/releases/latest
+			</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Aelanna.EccentricTech.DefenseGrid</packageId>
+			<displayName>Eccentric Tech - Defense Grid</displayName>
+			<downloadUrl>
+				https://steamcommunity.com/sharedfiles/filedetails/?id=3066838686
+			</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3066838686</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+
+	<incompatibleWith>
+		<!-- <li>username.modname</li> -->
+	</incompatibleWith>
+
+	<loadBefore>
+		<!-- <li>username.modname</li> -->
+	</loadBefore>
+
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>CETeam.CombatExtended</li>
+		<li>Aelanna.EccentricTech.DefenseGrid</li>
+	</loadAfter>
+
+	<description>
+		Adding more Types of PGM missiles for the Eccentic Tech defense grid mod. 
+	</description>
+</ModMetaData>

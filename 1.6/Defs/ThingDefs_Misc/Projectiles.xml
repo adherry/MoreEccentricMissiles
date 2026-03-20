@@ -45,4 +45,50 @@
             </li>
         </modExtensions>
     </ThingDef>
+    <!-- M72 PGM (Flare) -->
+    <ThingDef ParentName="EccentricDefenseGrid_BaseArtilleryProjectile" MayRequire="aelanna.eccentrictech.flares2">
+        <defName>ETDG_Custom_Projectile_M72PGM_Flare</defName>
+        <label>M72 precision guided flare</label>
+        <graphicData>
+            <texPath>Eccentric/Things/Projectiles/Projectile_M72_Flare</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Smoke</damageDef>
+            <speed>40</speed>
+            <flyOverhead>true</flyOverhead>
+            <preExplosionSpawnThingDef>EccentricSkyFlareMortar</preExplosionSpawnThingDef>
+            <soundExplode>Eccentric_FlareIgnite</soundExplode>
+        </projectile>
+        <modExtensions>
+            <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+                <effects>
+                    <li>Eccentric_ArtilleryMissileTrail</li>
+                    <li>Eccentric_ArtilleryMissileSmoke</li>
+                    <li>Eccentric_ArtilleryMissileExhaust</li>
+                </effects>
+                <stages>
+                    <li>
+                        <label>ejected</label>
+                        <type>Launch</type>
+                        <duration>24</duration>
+                        <overrideInitialAngle>true</overrideInitialAngle>
+                        <angle>-90</angle>
+                        <initialHeight>0.1</initialHeight>
+                        <heightOffset>2</heightOffset>
+                        <heightFunction>EaseOutQuad</heightFunction>
+                        <startSound>Eccentric_ArtilleryMissileEject</startSound>
+                    </li>
+                    <li>
+                        <label>tracking</label>
+                        <type>Terminal</type>
+                        <speed>40</speed>
+                        <positionFunction>EaseInCubic</positionFunction>
+                        <arcFactor>8</arcFactor>
+                        <arcFunction>EaseOutCubic</arcFunction>
+                        <startSound>Eccentric_ArtilleryMissileIgnite</startSound>
+                    </li>
+                </stages>
+            </li>
+        </modExtensions>
+    </ThingDef>
 </Defs>

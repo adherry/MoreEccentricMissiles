@@ -36,4 +36,35 @@
             </researchPrerequisites>
         </recipeMaker>
     </ThingDef>
+    <!-- M71 PGM (Flare) -->
+    <ThingDef ParentName="EccentricDefenseGrid_BaseMakeableOrdnance"
+        Class="EccentricDefenseGrid.OrdnanceDef" MayRequire="aelanna.eccentrictech.flares2">
+        <defName>ETDG_Custom_Ordnance_M72PGM_Flare</defName>
+        <label>M72 PGM (flare)</label>
+        <labelShort>M72 Flare</labelShort>
+        <description>A precision-guided short-range missile loaded with a parachute flare. Illuminates a large area around the target.\n\nIt is designed to be loaded into vertical missile launchers on military-grade starships and requires a guidance lock to fire.</description>
+        <uiOrder>120</uiOrder>
+        <graphicData>
+            <texPath>Eccentric/Things/Items/Ordnance_M72_Flare</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>330</MarketValue>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+            <Chemfuel>40</Chemfuel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <ordnance>
+            <projectile>ETDG_Custom_Projectile_M72PGM_Flare</projectile>
+            <effectRadius>2.9</effectRadius>
+            <uiColor>(255,153,0)</uiColor>
+        </ordnance>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.9</explosiveRadius>
+                <explosiveDamageType>Smoke</explosiveDamageType>
+            </li>
+        </comps>
+    </ThingDef>
 </Defs>

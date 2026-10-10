@@ -73,7 +73,7 @@
         <defName>ETDG_Custom_Ordnance_M73PGM_Heal</defName>
         <label>M73 PGM (heal)</label>
         <labelShort>M73 Heal</labelShort>
-        <description>A precision-guided short-range missile filled with a sticky mechanite gel made from glitterworld medicine. On impact it bursts into a cloud of heal-goop that immediately tends the wounds of every creature caught in it. Mechanoids are not affected.\n\nThe goop numbs pain for a few hours, but patients hate it. Being tended by a missile is not pleasant, and the goop is very sticky.\n\nIt is designed to be loaded into vertical missile launchers on military-grade starships and requires a guidance lock to fire.</description>
+        <description>A precision-guided short-range missile filled with a sticky mechanite gel made from glitterworld medicine. On impact it bursts into a cloud of heal-goop that immediately tends the wounds of every creature caught in it. Mechanoids are not affected.\n\nThe goop numbs pain for a few hours, but patients hate it. Being tended by a missile is not pleasant, and the goop is very sticky: it takes days before they stop feeling it.\n\nIt is designed to be loaded into vertical missile launchers on military-grade starships and requires a guidance lock to fire.</description>
         <uiOrder>130</uiOrder>
         <graphicData>
             <texPath>Eccentric/Things/Items/Ordnance_Medical</texPath>

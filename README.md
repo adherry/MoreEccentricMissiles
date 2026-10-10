@@ -34,7 +34,6 @@ This missile bursts into a cloud of light blue heal-goop at the destination, ten
 
 # Requirements
 
-- [Harmony](https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077)
 - [Eccentric Tech - Defense Grid](https://steamcommunity.com/sharedfiles/filedetails/?id=3066838686) (and its own requirements)
 - Optional: [Eccentric Extras - Flares](https://steamcommunity.com/sharedfiles/filedetails/?id=2552628275) for the M72
 

@@ -7,3 +7,5 @@
 # /Source
 .rimsearcher/*
 !.rimsearcher/README.md
+Source/obj/
+Source/bin/

@@ -20,6 +20,9 @@
                 <tendQualityRange>0.4~0.8</tendQualityRange>
                 <hediff>ETDG_Custom_HealGoopNumbing</hediff>
                 <thought>ETDG_Custom_HealGoopDisgust</thought>
+                <removeThoughts>
+                    <li>ETDG_Custom_HealGoopSticky</li>
+                </removeThoughts>
             </li>
         </modExtensions>
     </DamageDef>
@@ -65,7 +68,7 @@
         </filth>
     </ThingDef>
 
-    <!-- 6 hours (15000 ticks) of -10% pain -->
+    <!-- 6 hours (15000 ticks) of -20% pain -->
     <HediffDef>
         <defName>ETDG_Custom_HealGoopNumbing</defName>
         <label>heal-goop numbing</label>
@@ -81,22 +84,38 @@
         </comps>
         <stages>
             <li>
-                <painFactor>0.9</painFactor>
+                <painFactor>0.8</painFactor>
             </li>
         </stages>
     </HediffDef>
 
-    <!-- 6 hours (0.25 days) of -10 mood -->
+    <!-- 1 day of -10 mood, then turns into "I still feel sticky" -->
     <ThoughtDef>
         <defName>ETDG_Custom_HealGoopDisgust</defName>
         <thoughtClass>Thought_Memory</thoughtClass>
-        <durationDays>0.25</durationDays>
+        <durationDays>1</durationDays>
         <stackLimit>1</stackLimit>
+        <nextThought>ETDG_Custom_HealGoopSticky</nextThought>
         <stages>
             <li>
                 <label>disgusting heal-goop</label>
                 <description>I got patched up by a missile. Now I'm covered in sticky blue goop that won't come off.</description>
                 <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!-- Follow-up after the disgust wears off: 1 day of -5 mood -->
+    <ThoughtDef>
+        <defName>ETDG_Custom_HealGoopSticky</defName>
+        <thoughtClass>Thought_Memory</thoughtClass>
+        <durationDays>1</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>I still feel sticky</label>
+                <description>That missile goop is mostly gone, but I can still feel it in places I'd rather not talk about.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>

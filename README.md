@@ -25,7 +25,7 @@ This missile bursts into a cloud of light blue heal-goop at the destination, ten
 - Effect radius: 1.9 tiles
 - Tends all wounds of every pawn in the blast, except mechanoids
 - A direct hit still deals 5 blunt damage, which the goop then tends as well
-- Patients get "disgusting heal-goop" (-10 mood) and "heal-goop numbing" (-10% pain) for 6 hours
+- Patients get "heal-goop numbing" (-20% pain) for 6 hours, and "disgusting heal-goop" (-10 mood) for 1 day, which then turns into "I still feel sticky" (-5 mood) for another day
 - Leaves sticky light blue goop on the ground
 - Can target pawns or locations, and tracks moving targets like the M48 PGM (HEAT)
 - Healing is not considered an attack, so it can be used on visitors and allies without goodwill loss (a direct hit still counts as one)

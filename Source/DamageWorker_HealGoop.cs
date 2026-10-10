@@ -15,6 +15,9 @@ namespace MoreEccentricMissiles
         public HediffDef hediff;
 
         public ThoughtDef thought;
+
+        /// <summary>Memories removed before the thought is given, e.g. a lingering follow-up thought.</summary>
+        public List<ThoughtDef> removeThoughts;
     }
 
     /// <summary>
@@ -56,9 +59,20 @@ namespace MoreEccentricMissiles
                 }
             }
 
-            if (props.thought != null)
+            MemoryThoughtHandler memories = pawn.needs?.mood?.thoughts?.memories;
+            if (memories != null)
             {
-                pawn.needs?.mood?.thoughts?.memories?.TryGainMemory(props.thought);
+                if (props.removeThoughts != null)
+                {
+                    foreach (ThoughtDef removed in props.removeThoughts)
+                    {
+                        memories.RemoveMemoriesOfDef(removed);
+                    }
+                }
+                if (props.thought != null)
+                {
+                    memories.TryGainMemory(props.thought);
+                }
             }
 
             if (pawn.Spawned)

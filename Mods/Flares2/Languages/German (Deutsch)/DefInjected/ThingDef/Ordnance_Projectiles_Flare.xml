@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <ETDG_Custom_Ordnance_M72PGM_Flare.label>M72 PGM (Leuchtfackel)</ETDG_Custom_Ordnance_M72PGM_Flare.label>
+    <ETDG_Custom_Ordnance_M72PGM_Flare.labelShort>M72 Fackel</ETDG_Custom_Ordnance_M72PGM_Flare.labelShort>
+    <ETDG_Custom_Ordnance_M72PGM_Flare.description>Eine präzisionsgelenkte Kurzstreckenrakete mit einer Fallschirm-Leuchtfackel. Erhellt ein großes Gebiet rund um das Ziel.\n\nSie ist für vertikale Raketenwerfer auf militärischen Raumschiffen ausgelegt und benötigt zum Abfeuern eine Zielerfassung.</ETDG_Custom_Ordnance_M72PGM_Flare.description>
+    <ETDG_Custom_Projectile_M72PGM_Flare.label>präzisionsgelenkte M72-Leuchtfackel</ETDG_Custom_Projectile_M72PGM_Flare.label>
+    <ETDG_Custom_Projectile_M72PGM_Flare.modExtensions.0.stages.0.label>ausgestoßen</ETDG_Custom_Projectile_M72PGM_Flare.modExtensions.0.stages.0.label>
+    <ETDG_Custom_Projectile_M72PGM_Flare.modExtensions.0.stages.1.label>Zielverfolgung</ETDG_Custom_Projectile_M72PGM_Flare.modExtensions.0.stages.1.label>
+</LanguageData>

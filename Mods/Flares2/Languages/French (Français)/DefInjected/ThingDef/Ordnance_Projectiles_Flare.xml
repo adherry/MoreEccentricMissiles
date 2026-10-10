@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-    <ETDG_Custom_Ordnance_M72PGM_Flare.label>M72 PGM (fusée éclairante)</ETDG_Custom_Ordnance_M72PGM_Flare.label>
-    <ETDG_Custom_Ordnance_M72PGM_Flare.labelShort>M72 Fusée</ETDG_Custom_Ordnance_M72PGM_Flare.labelShort>
-    <ETDG_Custom_Ordnance_M72PGM_Flare.description>Un missile à courte portée guidé avec précision, chargé d'une fusée éclairante à parachute. Illumine une vaste zone autour de la cible.\n\nIl est conçu pour être chargé dans les lanceurs de missiles verticaux des vaisseaux spatiaux militaires et nécessite un verrouillage de guidage pour être tiré.</ETDG_Custom_Ordnance_M72PGM_Flare.description>
-    <ETDG_Custom_Projectile_M72PGM_Flare.label>fusée éclairante guidée de précision M72</ETDG_Custom_Projectile_M72PGM_Flare.label>
-    <ETDG_Custom_Projectile_M72PGM_Flare.modExtensions.0.stages.0.label>éjectée</ETDG_Custom_Projectile_M72PGM_Flare.modExtensions.0.stages.0.label>
-    <ETDG_Custom_Projectile_M72PGM_Flare.modExtensions.0.stages.1.label>guidage</ETDG_Custom_Projectile_M72PGM_Flare.modExtensions.0.stages.1.label>
-</LanguageData>

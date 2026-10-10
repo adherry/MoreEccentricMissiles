@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-    <ETDG_Custom_Ordnance_M72PGM_Flare.label>M72 PGM (bengala)</ETDG_Custom_Ordnance_M72PGM_Flare.label>
-    <ETDG_Custom_Ordnance_M72PGM_Flare.labelShort>M72 Bengala</ETDG_Custom_Ordnance_M72PGM_Flare.labelShort>
-    <ETDG_Custom_Ordnance_M72PGM_Flare.description>Un misil de corto alcance guiado de precisión, cargado con una bengala con paracaídas. Ilumina una gran zona alrededor del objetivo.\n\nEstá diseñado para cargarse en lanzadores verticales de misiles de naves estelares militares y necesita un bloqueo de guiado para dispararse.</ETDG_Custom_Ordnance_M72PGM_Flare.description>
-    <ETDG_Custom_Projectile_M72PGM_Flare.label>bengala guiada de precisión M72</ETDG_Custom_Projectile_M72PGM_Flare.label>
-    <ETDG_Custom_Projectile_M72PGM_Flare.modExtensions.0.stages.0.label>eyectada</ETDG_Custom_Projectile_M72PGM_Flare.modExtensions.0.stages.0.label>
-    <ETDG_Custom_Projectile_M72PGM_Flare.modExtensions.0.stages.1.label>rastreando</ETDG_Custom_Projectile_M72PGM_Flare.modExtensions.0.stages.1.label>
-</LanguageData>

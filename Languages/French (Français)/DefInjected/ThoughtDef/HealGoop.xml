@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-    <ETDG_Custom_HealGoopDisgust.stages.0.label>gelée curative dégoûtante</ETDG_Custom_HealGoopDisgust.stages.0.label>
-    <ETDG_Custom_HealGoopDisgust.stages.0.description>Un missile m'a rafistolé. Maintenant je suis couvert d'une gelée bleue collante qui ne veut pas partir.</ETDG_Custom_HealGoopDisgust.stages.0.description>
-    <ETDG_Custom_HealGoopSticky.stages.0.label>je me sens encore collant</ETDG_Custom_HealGoopSticky.stages.0.label>
-    <ETDG_Custom_HealGoopSticky.stages.0.description>La gelée du missile est presque partie, mais je la sens encore à des endroits dont je préfère ne pas parler.</ETDG_Custom_HealGoopSticky.stages.0.description>
-</LanguageData>

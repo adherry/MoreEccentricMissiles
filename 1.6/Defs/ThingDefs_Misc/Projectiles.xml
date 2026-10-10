@@ -102,7 +102,7 @@
         <projectile>
             <damageDef>ETDG_Custom_HealGoop</damageDef>
             <damageAmountBase>1</damageAmountBase>
-            <explosionRadius>2.9</explosionRadius>
+            <explosionRadius>1.9</explosionRadius>
             <speed>40</speed>
             <shadowSize>0.6</shadowSize>
             <arcHeightFactor>14</arcHeightFactor>

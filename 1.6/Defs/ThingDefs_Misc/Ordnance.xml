@@ -89,7 +89,7 @@
         </costList>
         <ordnance>
             <projectile>ETDG_Custom_Projectile_M73PGM_Heal</projectile>
-            <effectRadius>2.9</effectRadius>
+            <effectRadius>1.9</effectRadius>
             <uiColor>(140,205,255)</uiColor>
             <targetParams>
                 <canTargetSelf>false</canTargetSelf>
@@ -101,7 +101,7 @@
         </ordnance>
         <comps>
             <li Class="CompProperties_Explosive">
-                <explosiveRadius>2.9</explosiveRadius>
+                <explosiveRadius>1.9</explosiveRadius>
                 <explosiveDamageType>ETDG_Custom_HealGoop</explosiveDamageType>
                 <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
             </li>

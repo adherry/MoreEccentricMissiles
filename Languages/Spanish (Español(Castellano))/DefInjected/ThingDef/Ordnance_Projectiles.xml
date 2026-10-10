@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <ETDG_Custom_Ordnance_M71PGM.label>M71 PGM (humo)</ETDG_Custom_Ordnance_M71PGM.label>
+    <ETDG_Custom_Ordnance_M71PGM.labelShort>M71 Humo</ETDG_Custom_Ordnance_M71PGM.labelShort>
+    <ETDG_Custom_Ordnance_M71PGM.description>Un misil de corto alcance guiado de precisión, cargado con un compuesto fumígeno que ya se enciende al lanzarlo para lograr la máxima cobertura de humo.\n\nEstá diseñado para cargarse en lanzadores verticales de misiles de naves estelares militares y necesita un bloqueo de guiado para dispararse.</ETDG_Custom_Ordnance_M71PGM.description>
+    <ETDG_Custom_Ordnance_M73PGM_Heal.label>M73 PGM (curación)</ETDG_Custom_Ordnance_M73PGM_Heal.label>
+    <ETDG_Custom_Ordnance_M73PGM_Heal.labelShort>M73 Cura</ETDG_Custom_Ordnance_M73PGM_Heal.labelShort>
+    <ETDG_Custom_Ordnance_M73PGM_Heal.description>Un misil de corto alcance guiado de precisión, relleno de un gel de mecanitos pegajoso hecho con medicina de mundo brillante. Al impactar, estalla en una nube de pringue curativo que trata al instante las heridas de todas las criaturas alcanzadas. No afecta a los mecanoides.\n\nEl pringue alivia el dolor durante unas horas, pero los pacientes lo odian. Que te cure un misil no es agradable, y el pringue es muy pegajoso: tardan días en dejar de sentirlo.\n\nEstá diseñado para cargarse en lanzadores verticales de misiles de naves estelares militares y necesita un bloqueo de guiado para dispararse.</ETDG_Custom_Ordnance_M73PGM_Heal.description>
+    <ETDG_Custom_Projectile_M71PGM.label>misil guiado de precisión M71</ETDG_Custom_Projectile_M71PGM.label>
+    <ETDG_Custom_Projectile_M71PGM.modExtensions.0.stages.0.label>eyectado</ETDG_Custom_Projectile_M71PGM.modExtensions.0.stages.0.label>
+    <ETDG_Custom_Projectile_M71PGM.modExtensions.0.stages.1.label>rastreando</ETDG_Custom_Projectile_M71PGM.modExtensions.0.stages.1.label>
+    <ETDG_Custom_Projectile_M73PGM_Heal.label>misil guiado de precisión M73 de pringue curativo</ETDG_Custom_Projectile_M73PGM_Heal.label>
+    <ETDG_Custom_Projectile_M73PGM_Heal.modExtensions.1.stages.0.label>eyectado</ETDG_Custom_Projectile_M73PGM_Heal.modExtensions.1.stages.0.label>
+    <ETDG_Custom_Projectile_M73PGM_Heal.modExtensions.1.stages.1.label>rastreando</ETDG_Custom_Projectile_M73PGM_Heal.modExtensions.1.stages.1.label>
+    <ETDG_Custom_Filth_HealGoop.label>pringue curativo</ETDG_Custom_Filth_HealGoop.label>
+    <ETDG_Custom_Filth_HealGoop.description>Gel de mecanitos azul claro y pegajoso que deja un M73 PGM. Muy pegajoso.</ETDG_Custom_Filth_HealGoop.description>
+</LanguageData>

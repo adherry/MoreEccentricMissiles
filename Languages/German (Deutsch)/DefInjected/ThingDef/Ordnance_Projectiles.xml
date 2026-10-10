@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <ETDG_Custom_Ordnance_M71PGM.label>M71 PGM (Rauch)</ETDG_Custom_Ordnance_M71PGM.label>
+    <ETDG_Custom_Ordnance_M71PGM.labelShort>M71 Rauch</ETDG_Custom_Ordnance_M71PGM.labelShort>
+    <ETDG_Custom_Ordnance_M71PGM.description>Eine präzisionsgelenkte Kurzstreckenrakete, gefüllt mit einer raucherzeugenden Mischung, die schon beim Start gezündet wird, um möglichst viel Rauch zu verteilen.\n\nSie ist für vertikale Raketenwerfer auf militärischen Raumschiffen ausgelegt und benötigt zum Abfeuern eine Zielerfassung.</ETDG_Custom_Ordnance_M71PGM.description>
+    <ETDG_Custom_Ordnance_M73PGM_Heal.label>M73 PGM (Heilung)</ETDG_Custom_Ordnance_M73PGM_Heal.label>
+    <ETDG_Custom_Ordnance_M73PGM_Heal.labelShort>M73 Heilung</ETDG_Custom_Ordnance_M73PGM_Heal.labelShort>
+    <ETDG_Custom_Ordnance_M73PGM_Heal.description>Eine präzisionsgelenkte Kurzstreckenrakete, gefüllt mit einem klebrigen Mechanitengel aus Glitzerwelt-Medizin. Beim Aufprall zerplatzt sie zu einer Wolke aus Heilschleim, die sofort die Wunden aller Lebewesen darin versorgt. Mechanoiden sind nicht betroffen.\n\nDer Schleim betäubt einige Stunden lang den Schmerz, aber Patienten hassen ihn. Von einer Rakete verarztet zu werden ist nicht angenehm, und der Schleim ist sehr klebrig: Es dauert Tage, bis sie ihn nicht mehr spüren.\n\nSie ist für vertikale Raketenwerfer auf militärischen Raumschiffen ausgelegt und benötigt zum Abfeuern eine Zielerfassung.</ETDG_Custom_Ordnance_M73PGM_Heal.description>
+    <ETDG_Custom_Projectile_M71PGM.label>M71-Präzisionslenkflugkörper</ETDG_Custom_Projectile_M71PGM.label>
+    <ETDG_Custom_Projectile_M71PGM.modExtensions.0.stages.0.label>ausgestoßen</ETDG_Custom_Projectile_M71PGM.modExtensions.0.stages.0.label>
+    <ETDG_Custom_Projectile_M71PGM.modExtensions.0.stages.1.label>Zielverfolgung</ETDG_Custom_Projectile_M71PGM.modExtensions.0.stages.1.label>
+    <ETDG_Custom_Projectile_M73PGM_Heal.label>M73-Präzisionslenkflugkörper mit Heilschleim</ETDG_Custom_Projectile_M73PGM_Heal.label>
+    <ETDG_Custom_Projectile_M73PGM_Heal.modExtensions.1.stages.0.label>ausgestoßen</ETDG_Custom_Projectile_M73PGM_Heal.modExtensions.1.stages.0.label>
+    <ETDG_Custom_Projectile_M73PGM_Heal.modExtensions.1.stages.1.label>Zielverfolgung</ETDG_Custom_Projectile_M73PGM_Heal.modExtensions.1.stages.1.label>
+    <ETDG_Custom_Filth_HealGoop.label>Heilschleim</ETDG_Custom_Filth_HealGoop.label>
+    <ETDG_Custom_Filth_HealGoop.description>Klebriges, hellblaues Mechanitengel, das eine M73 PGM hinterlassen hat. Sehr klebrig.</ETDG_Custom_Filth_HealGoop.description>
+</LanguageData>

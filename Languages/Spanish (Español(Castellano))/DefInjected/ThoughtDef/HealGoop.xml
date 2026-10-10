@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <ETDG_Custom_HealGoopDisgust.stages.0.label>pringue curativo asqueroso</ETDG_Custom_HealGoopDisgust.stages.0.label>
+    <ETDG_Custom_HealGoopDisgust.stages.0.description>Me ha curado un misil. Ahora estoy cubierto de un pringue azul pegajoso que no se va.</ETDG_Custom_HealGoopDisgust.stages.0.description>
+    <ETDG_Custom_HealGoopSticky.stages.0.label>todavía me siento pegajoso</ETDG_Custom_HealGoopSticky.stages.0.label>
+    <ETDG_Custom_HealGoopSticky.stages.0.description>El pringue del misil casi se ha ido, pero aún lo noto en sitios de los que prefiero no hablar.</ETDG_Custom_HealGoopSticky.stages.0.description>
+</LanguageData>

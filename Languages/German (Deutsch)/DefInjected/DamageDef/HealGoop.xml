@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
     <ETDG_Custom_HealGoop.label>Heilschleim</ETDG_Custom_HealGoop.label>
+    <ETDG_Custom_HealGoop.deathMessage>{0} wurde getötet.</ETDG_Custom_HealGoop.deathMessage>
 </LanguageData>

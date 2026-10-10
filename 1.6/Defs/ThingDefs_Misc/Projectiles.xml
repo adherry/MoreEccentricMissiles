@@ -91,4 +91,65 @@
             </li>
         </modExtensions>
     </ThingDef>
+    <!-- M73 PGM (Heal), flight characteristics copied from the M48 PGM (HEAT) -->
+    <ThingDef ParentName="EccentricDefenseGrid_BaseArtilleryProjectile">
+        <defName>ETDG_Custom_Projectile_M73PGM_Heal</defName>
+        <label>M73 precision guided heal-goop missile</label>
+        <thingClass>MoreEccentricMissiles.Projectile_HealGoopMissile</thingClass>
+        <graphicData>
+            <texPath>Eccentric/Things/Projectiles/Projectile_Medical</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>ETDG_Custom_HealGoop</damageDef>
+            <damageAmountBase>1</damageAmountBase>
+            <explosionRadius>2.9</explosionRadius>
+            <speed>40</speed>
+            <shadowSize>0.6</shadowSize>
+            <arcHeightFactor>14</arcHeightFactor>
+            <flyOverhead>true</flyOverhead>
+            <soundExplode>Explosion_EMP</soundExplode>
+            <explosionEffect>ETDG_Custom_HealGoopExplosion</explosionEffect>
+            <postExplosionSpawnThingDef>ETDG_Custom_Filth_HealGoop</postExplosionSpawnThingDef>
+            <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        </projectile>
+        <modExtensions>
+            <li Class="MoreEccentricMissiles.ProjectileExtension_ImpactDamage">
+                <damageDef>Blunt</damageDef>
+                <amount>5</amount>
+            </li>
+            <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+                <activeTracking>true</activeTracking>
+                <effects>
+                    <li>Eccentric_ArtilleryMissileTrail</li>
+                    <li>Eccentric_ArtilleryMissileSmoke</li>
+                    <li>Eccentric_ArtilleryMissileExhaust</li>
+                </effects>
+                <impactEffects>
+                    <li>Eccentric_ArtilleryImpactDistortion</li>
+                </impactEffects>
+                <stages>
+                    <li>
+                        <label>ejected</label>
+                        <type>Launch</type>
+                        <duration>24</duration>
+                        <overrideInitialAngle>true</overrideInitialAngle>
+                        <angle>-90</angle>
+                        <initialHeight>0.1</initialHeight>
+                        <heightOffset>2</heightOffset>
+                        <heightFunction>EaseOutQuad</heightFunction>
+                        <startSound>Eccentric_ArtilleryMissileEject</startSound>
+                    </li>
+                    <li>
+                        <label>tracking</label>
+                        <type>Terminal</type>
+                        <speed>40</speed>
+                        <positionFunction>EaseInQuad</positionFunction>
+                        <arcFactor>12</arcFactor>
+                        <arcFunction>EccentricDefenseGrid_TopDown</arcFunction>
+                        <startSound>Eccentric_ArtilleryMissileIgnite</startSound>
+                    </li>
+                </stages>
+            </li>
+        </modExtensions>
+    </ThingDef>
 </Defs>

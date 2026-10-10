@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Heal-goop explosion: tends all wounds of non-mechanoid pawns, see DamageWorker_HealGoop -->
+    <DamageDef>
+        <defName>ETDG_Custom_HealGoop</defName>
+        <label>heal-goop</label>
+        <workerClass>MoreEccentricMissiles.DamageWorker_HealGoop</workerClass>
+        <canInterruptJobs>false</canInterruptJobs>
+        <makesBlood>false</makesBlood>
+        <defaultDamage>1</defaultDamage>
+        <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+        <explosionColorCenter>(140, 205, 255)</explosionColorCenter>
+        <explosionColorEdge>(140, 205, 255, 13)</explosionColorEdge>
+        <soundExplosion>Explosion_Stun</soundExplosion>
+        <harmsHealth>false</harmsHealth>
+        <combatLogRules>Damage_Extinguish</combatLogRules>
+        <consideredHelpful>true</consideredHelpful>
+        <modExtensions>
+            <li Class="MoreEccentricMissiles.DamageExtension_HealGoop">
+                <tendQualityRange>0.4~0.8</tendQualityRange>
+                <hediff>ETDG_Custom_HealGoopNumbing</hediff>
+                <thought>ETDG_Custom_HealGoopDisgust</thought>
+            </li>
+        </modExtensions>
+    </DamageDef>
+
+    <!-- Light blue recolour of the vanilla firefoam puff -->
+    <EffecterDef>
+        <defName>ETDG_Custom_HealGoopExplosion</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <positionRadius>0.2</positionRadius>
+                <moteDef>Mote_ExtinguisherPuff</moteDef>
+                <burstCount>10~15</burstCount>
+                <speed>4.8~8.4</speed>
+                <scale>4~5</scale>
+                <color>(140, 205, 255)</color>
+            </li>
+        </children>
+    </EffecterDef>
+
+    <!-- Light blue recolour of the vanilla firefoam filth -->
+    <ThingDef ParentName="BaseFilth">
+        <defName>ETDG_Custom_Filth_HealGoop</defName>
+        <label>heal-goop</label>
+        <description>Sticky, light blue mechanite gel left behind by an M73 PGM. Very sticky.</description>
+        <statBases>
+            <Beauty>-25</Beauty>
+            <Cleanliness>-5</Cleanliness>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/FireFoam</texPath>
+            <drawSize>1.75</drawSize>
+            <color>(140, 205, 255)</color>
+        </graphicData>
+        <filth>
+            <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+            <disappearsInDays>5~10</disappearsInDays>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+            <allowsFire>false</allowsFire>
+            <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+        </filth>
+    </ThingDef>
+
+    <!-- 6 hours (15000 ticks) of -10% pain -->
+    <HediffDef>
+        <defName>ETDG_Custom_HealGoopNumbing</defName>
+        <label>heal-goop numbing</label>
+        <description>Mechanite heal-goop from an M73 PGM is still working on this creature, dulling its pain.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(140, 205, 255)</defaultLabelColor>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>15000</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <painFactor>0.9</painFactor>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- 6 hours (0.25 days) of -10 mood -->
+    <ThoughtDef>
+        <defName>ETDG_Custom_HealGoopDisgust</defName>
+        <thoughtClass>Thought_Memory</thoughtClass>
+        <durationDays>0.25</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>disgusting heal-goop</label>
+                <description>I got patched up by a missile. Now I'm covered in sticky blue goop that won't come off.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

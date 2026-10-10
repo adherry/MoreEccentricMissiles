@@ -5,3 +5,5 @@
 # /*/Assemblies
 # /.vscode
 # /Source
+.rimsearcher/*
+!.rimsearcher/README.md

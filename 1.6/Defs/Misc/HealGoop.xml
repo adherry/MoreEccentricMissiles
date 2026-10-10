@@ -20,6 +20,9 @@
                 <tendQualityRange>0.4~0.8</tendQualityRange>
                 <hediff>ETDG_Custom_HealGoopNumbing</hediff>
                 <thought>ETDG_Custom_HealGoopDisgust</thought>
+                <removeThoughts>
+                    <li>ETDG_Custom_HealGoopSticky</li>
+                </removeThoughts>
             </li>
         </modExtensions>
     </DamageDef>

@@ -45,7 +45,7 @@ The M73 needs a small C# assembly. Build it with the .NET SDK:
 dotnet build Source -c Release
 ```
 
-This writes `1.6/Assemblies/MoreEccentricMissiles.dll`. The game and Workshop paths in `Source/MoreEccentricMissiles.csproj` default to a Linux Steam library; override them with `-p:RimWorldManaged=<.../Managed>` and `-p:WorkshopDir=<.../workshop/content/294100>`.
+This writes `1.6/Assemblies/MoreEccentricMissiles.dll`. RimWorld 1.7 loads the same 1.6 content and assembly (see `LoadFolders.xml`). The game and Workshop paths in `Source/MoreEccentricMissiles.csproj` default to a Linux Steam library; override them with `-p:RimWorldManaged=<.../Managed>` and `-p:WorkshopDir=<.../workshop/content/294100>`.
 
 # Acknowledgements
 

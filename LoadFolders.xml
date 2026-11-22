@@ -6,4 +6,12 @@
 		<!-- M72 flare translations, only when the flare defs exist -->
 		<li IfModActive="Aelanna.EccentricTech.Flares2">Mods/Flares2</li>
 	</v1.6>
+	<!-- 1.7 reuses the 1.6 content: per the 1.7 update notes, 1.6 assemblies
+	     run unchanged on the Waylith engine. Replace with a 1.7 folder once a
+	     native 1.7 build exists. -->
+	<v1.7>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="Aelanna.EccentricTech.Flares2">Mods/Flares2</li>
+	</v1.7>
 </loadFolders>
